@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Raleway:wght@600&display=swap");
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+.img-logo > img {
+  margin-top: 50px;
+  width: 90px;
+}
+ul {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 50px;
+
+  gap: 40px;
+  text-decoration: none;
+}
+ul > li {
+  list-style: none;
+}
+li > a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: white;
+}
+
+.container1 {
+  background: linear-gradient(180deg, #b300ff 0%, #3d4be7);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.first-main-image > img {
+  width: 700px;
+  margin-top: -80px;
+}
+.first-main-image {
+  margin-left: 150px;
+}
+
+.first-portion {
+  display: flex;
+  margin: 70px;
+}
+.heading-one {
+  font-size: 25px;
+  margin-left: 100px;
+  font-family: "Montserrat";
+  width: 450px;
+  color: #fff;
+}
+.first-paragraph {
+  font-size: 15px;
+}
+.link-menu-active {
+  color: rgb(93, 236, 236);
+  text-decoration: underline;
+  text-decoration-color: rgb(177, 172, 172);
+  text-underline-offset: 4px;
+}
+.nav-item > button {
+  padding: 10px 20px;
+  margin-top: -22px;
+  background-color: #12b0e8;
+  border-style: none;
+  color: #fff;
+}
+
+.img-two > img {
+  width: 500px;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-heading-two > h1,
+h2,
+p {
+  font-family: "Montserrat";
+}
+
+.paragraph > p {
+  margin-left: 40px;
+  width: 300px;
+  font-weight: 501;
+  font-size: 12px;
+}
+span > img {
+  position: relative;
+  top: 10px;
+}
+.main-heading-two {
+  width: 400px;
+}
+.paragraph-contain {
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.heading-two {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align-last: center;
+  font-weight: 1200;
+}
+
+.cards {
+  display: flex;
+  margin: 50px 150px 0px 250px;
+  gap: 40px;
+  justify-content: center;
+}
+.analytics {
+  width: 70px;
+  background-color: #df78e654;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.analytics1 {
+  width: 70px;
+  background-color: #89e67854;
+  padding: 20px 25px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: rgba(246, 243, 243, 0.677);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 3px rgba(68, 62, 62, 0.355);
+}
+.card > p {
+  font-size: 13px;
+  display: flex;
+  margin-left: 30px;
+  width: 150px;
+  text-align-last: center;
+}
+.card > h3 {
+  font-family: "Montserrat";
+  position: relative;
+  top: 30px;
+}
+
+.card-active {
+  padding-top: 30px;
+
+  background-color: rgba(246, 243, 243, 0.677);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 3px rgba(68, 62, 62, 0.355);
+}
+.card-active > p {
+  font-size: 13px;
+  display: flex;
+  margin-left: 30px;
+  width: 350px;
+  text-align-last: center;
+}
+
+.purple {
+  height: 150px;
+  background-color: #410c48;
+  border-radius: 20px;
+}
+.purple > h3 {
+  font-family: "Montserrat";
+  position: relative;
+  top: 17px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.purple > p {
+  width: 150px;
+  padding: 0px 20px 0px 20px;
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: #fff;
+  text-align-last: center;
+}
+.white {
+  display: none;
+}
+
+@media (max-width: 1270px) {
+  .nav-item {
+    display: none;
+  }
+
+  .white {
+    display: block;
+  }
+  .white-image > img {
+    width: 80%;
+  }
+  .first-portion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading-one {
+    width: 60%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-main-image > img {
+    margin-top: 0px;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .first-main-image > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-one {
+    width: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .heading-one {
+    width: auto;
+  }
+  .first-portion {
+    margin: 0px;
+    padding-right: 30px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    margin: 0px;
+    align-items: center;
+  }
+  .img-two > img {
+    width: 100%;
+  }
+}
